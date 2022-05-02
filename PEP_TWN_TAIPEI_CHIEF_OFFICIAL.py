@@ -18,6 +18,11 @@ from bs4 import BeautifulSoup
 from compliance_crawlers.utils.utils import removePunctuation, remove_space, removeTextInsideParentheses
 from compliance_crawlers.utils.table import html_table_to_list
 
+#websites urls: https://www.gov.taipei/News.aspx?n=19FA75E3DEDDDA1F&sms=74724DD2D5D1AF52
+#               https://www.gov.taipei/News.aspx?n=25377E0A6026BC5C&sms=692DD1623EAE1155
+#               https://www.gov.taipei/cp.aspx?n=53286BCFCDEE9493
+#               https://www.gov.taipei/News_Content.aspx?n=EE4BCBC62725FD4A&sms=E7B05119A251FAC0&s=44A04DC0691F4B4A
+#               https://www.gov.taipei/cp.aspx?n=C1304E1985BE745E
 
 class TaipeiChief(scrapy.Spider):
     name = 'PEP_TWN_TAIPEI_CHIEF_OFFICIAL'
