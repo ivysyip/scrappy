@@ -1,2 +1,2 @@
-# Scrappy
+# Scrapy
 Scrapping information from websites :)
