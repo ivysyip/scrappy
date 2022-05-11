@@ -18,6 +18,8 @@ from bs4 import BeautifulSoup
 from compliance_crawlers.utils.utils import removePunctuation, remove_space, removeTextInsideParentheses
 from compliance_crawlers.utils.table import html_table_to_list
 
+# website: https://www.ey.gov.tw/Page/77A100A2C8409A3A
+
 class TaiwanExecutiveYuan(scrapy.Spider):
     name = 'PEP_TWN_EXECUTIVE_YUAN'
     type = 'pep'
