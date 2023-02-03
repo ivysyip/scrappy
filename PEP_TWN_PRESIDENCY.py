@@ -18,6 +18,12 @@ from bs4 import BeautifulSoup
 from compliance_crawlers.utils.utils import removePunctuation, remove_space, removeTextInsideParentheses
 from compliance_crawlers.utils.table import html_table_to_list
 
+#website urls: https://www.president.gov.tw/Page/40
+#              https://www.president.gov.tw/Page/581
+#              https://www.president.gov.tw/Page/81
+#              https://www.president.gov.tw/Page/82
+#              https://www.president.gov.tw/Page/107
+#              https://www.president.gov.tw/Page/109
 
 class TaiwanOfficeOfThePresident(scrapy.Spider):
     name = 'PEP_TWN_PRESIDENCY'
