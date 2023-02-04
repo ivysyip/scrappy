@@ -1,3 +1,25 @@
+# -*- coding: utf-8 -*-
+import scrapy
+from scrapy import signals
+from scrapy import Spider
+import re, html, os, itertools
+from datetime import datetime
+from compliance_crawlers.items import PEPItem
+# from opencc import OpenCC
+from scrapy.exceptions import CloseSpider
+import json
+from compliance_crawlers.settings import LOG_FILE_PATH
+from compliance_crawlers.settings import MONGO_URI
+from compliance_crawlers.settings import MONGO_DB
+import string
+from pymongo import MongoClient
+import pymongo
+from bs4 import BeautifulSoup
+from compliance_crawlers.utils.utils import removePunctuation, remove_space, removeTextInsideParentheses
+from compliance_crawlers.utils.table import html_table_to_list
+
+#url: https://db.cec.gov.tw/histMain.jsp?voteSel=20200101A1
+
 class PepTaiwanElections(scrapy.Spider):
     name = 'PEP_TWN_ELECTIONS'
     type = 'pep'
